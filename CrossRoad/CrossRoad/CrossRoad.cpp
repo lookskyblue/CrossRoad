@@ -33,7 +33,6 @@ LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
 bool g_bLoop = true;
-
 void Init();
 void Update();
 void Render();
@@ -46,7 +45,9 @@ void RenderObs(HDC* const);
 void RenderMons(HDC* const);
 void MoveMonster(float);
 void SendPlayerBottom();
+void AddMonster();
 
+TCHAR NowStage[20];
 Player* g_player;
 std::vector<Obj> obs_vec;
 std::vector<Monster> mons_vec;
@@ -238,32 +239,16 @@ void Init()
     g_width = (rcWindow.right + rcWindow.left) / 2.2;
     g_height = rcWindow.bottom;
 
-    std::uniform_int_distribution<int> move_speed(500, 1000);
-    std::uniform_int_distribution<int> left_mons_rand_x(0, 200);
-    std::uniform_int_distribution<int> right_mons_rand_x(rcWindow.right - 200, rcWindow.right - 50);
-    std::uniform_int_distribution<int> g_height_mons_rand_y(150, rcWindow.bottom - 100);
-
     obs_vec.reserve(2);
-    mons_vec.reserve(7);
 
     g_player = new Player(g_width - PLAYER_WIDTH, g_height - PLAYER_HEIGHT, g_width, g_height, 500);
 
     obs_vec.push_back(Obj(300, 0, 300 + OBS_WIDTH, 0 + OBS_HEIGHT));
     obs_vec.push_back(Obj(700, 0, 700 + OBS_WIDTH, 0 + OBS_HEIGHT));
 
-    for (size_t i = 0; i < mons_vec.capacity(); i++)
-    {
-        int startLX = left_mons_rand_x(g_gen);
-        int startRX = right_mons_rand_x(g_gen);
-        int startY = g_height_mons_rand_y(g_gen);
-        int speed = move_speed(g_gen);
-
-        if (i < 3)
-            mons_vec.push_back(Monster(startLX, startY, startLX + MONS_WIDTH, startY + MONS_HEIGHT, 1, speed));
-        
-        else 
-            mons_vec.push_back(Monster(startRX, startY, startRX + MONS_WIDTH, startY + MONS_HEIGHT, -1, speed));
-    }
+    mons_vec.reserve(20);
+    AddMonster();
+    wsprintf(NowStage, L"NowStage: %d", g_player->GetNowStage());
 }
 
 void Update()
@@ -300,6 +285,7 @@ void Render()
     RenderPlayer(&hMemDC);
     RenderObs(&hMemDC);
     RenderMons(&hMemDC);
+    TextOut(hMemDC, rcWindow.right / 2 + 150, rcWindow.bottom - 25, NowStage, lstrlen(NowStage));
 
     SelectObject(hMemDC, OldBitMap);
     DeleteObject(OldBitMap);
@@ -315,18 +301,23 @@ void LateUpdate()
         g_player->GetR() <= obs_vec[1].GetL() &&
         g_player->GetB() <= obs_vec[0].GetB())
     {
-        if (MessageBox(g_hWnd, L"Again?", L"CrossRoad", MB_YESNO)
-            == IDYES)
-        {
-            SendMessage(g_hWnd, WM_COMMAND, 0, NULL);
-            g_player->SetL(500);
-            g_player->SetT(700);
-            g_player->SetR(500 + PLAYER_WIDTH);
-            g_player->SetB(700 + PLAYER_HEIGHT);
-        }
+        //if (MessageBox(g_hWnd, L"Again?", L"CrossRoad", MB_YESNO)
+        //    == IDYES)
+        //{
+        //    //SendMessage(g_hWnd, WM_COMMAND, 0, NULL);
+        //    g_player->StageUp(1);
+        //    AddMonster();
+        //    SendPlayerBottom();
+        //}
 
-        else
-            SendMessage(g_hWnd, WM_DESTROY, 0, 0);
+        //else
+        //    SendMessage(g_hWnd, WM_DESTROY, 0, 0);
+
+        g_player->StageUp(1);
+        AddMonster();
+        wsprintf(NowStage, L"NowStage: %d", g_player->GetNowStage());
+        //SendPlayerBottom();
+        //Beep(100, 100);
     }
 
     // 몬스터가 벽에 부딪힐때 마다 반대로 튕기도록
@@ -470,4 +461,28 @@ void SendPlayerBottom()
     g_player->SetT(g_height - PLAYER_HEIGHT);
     g_player->SetR(g_width);
     g_player->SetB(g_height);
+}
+
+void AddMonster()
+{
+    std::uniform_int_distribution<int> move_speed(500, 1000);
+    std::uniform_int_distribution<int> left_mons_rand_x(0, 200);
+    std::uniform_int_distribution<int> right_mons_rand_x(rcWindow.right - 200, rcWindow.right - 50);
+    std::uniform_int_distribution<int> g_height_mons_rand_y(150, rcWindow.bottom - 100);
+
+    mons_vec.clear();
+
+    for (size_t i = 1; i <= g_player->GetNowStage(); i++)
+    {
+        int startLX = left_mons_rand_x(g_gen);
+        int startRX = right_mons_rand_x(g_gen);
+        int startY = g_height_mons_rand_y(g_gen);
+        int speed = move_speed(g_gen);
+
+        if (i < g_player->GetNowStage() / 2) // 몬스터를 좌우 절반씩 배치
+            mons_vec.push_back(Monster(startLX, startY, startLX + MONS_WIDTH, startY + MONS_HEIGHT, 1, speed));
+
+        else
+            mons_vec.push_back(Monster(startRX, startY, startRX + MONS_WIDTH, startY + MONS_HEIGHT, -1, speed));
+    }
 }

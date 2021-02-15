@@ -1,37 +1,39 @@
 ﻿  CrossRoad.cpp
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(238,48): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(239,24): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(262,104): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(262,86): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(262,65): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(262,49): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(262,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(265,105): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(265,86): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(265,65): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(265,49): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(265,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(333,37): warning C4227: 오래된 구문을 사용했습니다. 참조의 한정자가 무시됩니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(343,37): warning C4227: 오래된 구문을 사용했습니다. 참조의 한정자가 무시됩니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(368,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(367,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(366,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(365,38): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(374,76): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(374,63): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(374,50): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(374,37): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(380,76): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(380,63): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(380,50): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(380,37): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(413,32): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(414,38): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(419,32): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(420,37): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(425,32): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(426,39): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(431,32): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(432,40): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(463,37): warning C4227: 오래된 구문을 사용했습니다. 참조의 한정자가 무시됩니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(239,48): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(240,24): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(324,37): warning C4227: 오래된 구문을 사용했습니다. 참조의 한정자가 무시됩니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(334,37): warning C4227: 오래된 구문을 사용했습니다. 참조의 한정자가 무시됩니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(359,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(358,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(357,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(356,38): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(365,76): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(365,63): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(365,50): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(365,37): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(371,76): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(371,63): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(371,50): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(371,37): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(404,32): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(405,38): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(410,32): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(411,37): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(416,32): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(417,39): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(422,32): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(423,40): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(454,37): warning C4227: 오래된 구문을 사용했습니다. 참조의 한정자가 무시됩니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(475,26): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(482,15): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(483,104): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(483,86): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(483,65): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(483,49): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(483,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(486,105): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(486,86): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(486,65): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(486,49): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\CrossRoad\CrossRoad.cpp(486,40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   CrossRoad.vcxproj -> C:\Users\우성\source\repos\포폴\WinApi\CrossRoad\CrossRoad\Debug\CrossRoad.exe

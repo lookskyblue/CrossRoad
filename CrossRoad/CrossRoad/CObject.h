@@ -37,12 +37,17 @@ public:
 };
 
 class Player : public Obj {
+private:
+	int nowStage;
 public:
 	Player(float l, float t, float r, float b, float speed = 500)
 		:Obj(l, t, r, b, speed)
+		, nowStage(1)
 	{}
 
 	Player() = default;
+	int GetNowStage() { return nowStage; }
+	void StageUp(int i) { nowStage += i; }
 	virtual ~Player() {
 	};
 };
