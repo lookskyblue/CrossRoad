@@ -366,22 +366,28 @@ void GetPlayerKey(float fDeltaTime)
 {
     float fspeed = g_player->GetSpeed() * fDeltaTime;
 
+    /*if (GetAsyncKeyState('A') && GetAsyncKeyState('W'))
+    {
+        g_player->MoveX(-fspeed);
+        g_player->MoveY(-fspeed);
+    }*/
+
     if (GetAsyncKeyState('A') & 0x8000)
     {
         g_player->MoveX(-fspeed);
     }
 
-    else if (GetAsyncKeyState('D') & 0x8000)
+    if (GetAsyncKeyState('D') & 0x8000)
     {
         g_player->MoveX(fspeed);
     }
 
-    else if (GetAsyncKeyState('W') & 0x8000)
+    if (GetAsyncKeyState('W') & 0x8000)
     {
         g_player->MoveY(-fspeed);
     }
 
-    else if (GetAsyncKeyState('S') & 0x8000)
+    if (GetAsyncKeyState('S') & 0x8000)
     {
         g_player->MoveY(fspeed);
     }
