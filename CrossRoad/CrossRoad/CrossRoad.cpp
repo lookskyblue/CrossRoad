@@ -172,9 +172,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             case IDM_EXIT:
                 DestroyWindow(hWnd);
                 break;
-            case 0:
-
-                break;
             default:
                 return DefWindowProc(hWnd, message, wParam, lParam);
             }
@@ -241,7 +238,7 @@ void Init()
 
     obs_vec.reserve(2);
 
-    g_player = new Player(g_width - PLAYER_WIDTH, g_height - PLAYER_HEIGHT, g_width, g_height, 500);
+    g_player = new Player(g_width - PLAYER_WIDTH, g_height - PLAYER_HEIGHT, g_width, g_height, 1000);
 
     obs_vec.push_back(Obj(300, 0, 300 + OBS_WIDTH, 0 + OBS_HEIGHT));
     obs_vec.push_back(Obj(700, 0, 700 + OBS_WIDTH, 0 + OBS_HEIGHT));
@@ -301,23 +298,11 @@ void LateUpdate()
         g_player->GetR() <= obs_vec[1].GetL() &&
         g_player->GetB() <= obs_vec[0].GetB())
     {
-        //if (MessageBox(g_hWnd, L"Again?", L"CrossRoad", MB_YESNO)
-        //    == IDYES)
-        //{
-        //    //SendMessage(g_hWnd, WM_COMMAND, 0, NULL);
-        //    g_player->StageUp(1);
-        //    AddMonster();
-        //    SendPlayerBottom();
-        //}
-
-        //else
-        //    SendMessage(g_hWnd, WM_DESTROY, 0, 0);
-
         g_player->StageUp(1);
         AddMonster();
         wsprintf(NowStage, L"NowStage: %d", g_player->GetNowStage());
-        //SendPlayerBottom();
-        //Beep(100, 100);
+        SendPlayerBottom();
+        Beep(100, 100);
     }
 
     // 몬스터가 벽에 부딪힐때 마다 반대로 튕기도록
@@ -367,8 +352,14 @@ void RenderObs(HDC* const hMemDC)
 
 void RenderMons(HDC* const hMemDC)
 {
+    HBRUSH myBrush = CreateSolidBrush(RGB(0,0,0));
+    
+    SelectObject(*hMemDC, myBrush);
+
     for (auto const& elem : mons_vec)
         Rectangle(*hMemDC, elem.GetL(), elem.GetT(), elem.GetR(), elem.GetB());
+
+    DeleteObject(myBrush);
 }
 
 void GetPlayerKey(float fDeltaTime)
@@ -466,8 +457,8 @@ void SendPlayerBottom()
 void AddMonster()
 {
     std::uniform_int_distribution<int> move_speed(500, 1000);
-    std::uniform_int_distribution<int> left_mons_rand_x(0, 200);
-    std::uniform_int_distribution<int> right_mons_rand_x(rcWindow.right - 200, rcWindow.right - 50);
+    std::uniform_int_distribution<int> left_mons_rand_x(0, 500);
+    std::uniform_int_distribution<int> right_mons_rand_x(rcWindow.right - 500, rcWindow.right - 50);
     std::uniform_int_distribution<int> g_height_mons_rand_y(150, rcWindow.bottom - 100);
 
     mons_vec.clear();
